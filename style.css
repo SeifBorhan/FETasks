@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.monopoly-board {
+    display: flex;
+    flex-direction: column;
+    width: 90vmin;
+    height: 90vmin;
+    position: relative;
+    border: 2px solid black;
+
+    
+}
+.rowHeight{
+    height: 10%;
+}
+
+.cell{
+    border-right: 2px solid black;
+}
+
+.topLine{
+    height: 20%;
+}
+
+
+.sideLeft {
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.sideRight{
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.sideTop{
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBottom{
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.borderBottom{
+    border-bottom: 2px solid black;
+}
+
+.corner-top-left {
+    border-bottom: 2px solid black;
+}
+
+.corner-top-right {
+    border-bottom: 2px solid black;
+}
+
+.corner-bottom-left {
+    border-top: 2px solid black;
+
+}
+
+.corner-bottom-right {
+    /* padding: 20px; */
+    border-top: 2px solid black;
+
+}
+
+.sideTop div{
+    height: 30%;
+    width: 100%;
+}
+.sideTop span{
+    height: 70%;
+    width: 100%;
+}
+.sideBottom div{
+    height: 30%;
+    width: 100%;
+}
+.sideBottom span{
+    height: 70%;
+    width: 100%;
+}
+.sideLeft div{
+    height: 100%;
+    width: 30%;
+}
+.sideLeft span{
+    height: 100%;
+    width: 70%;
+}
+.sideRight div{
+    height: 100%;
+    width: 30%;
+}
+.sideRight span{
+    height: 100%;
+    width: 70%;
+}
+
+
+.middleOne .sideLeft div,
+.middleTwo .sideLeft div,
+.middleFour .sideLeft div{
+    background-color: orange;
+}
+
+.middleSix .sideLeft div,
+.middleSeven .sideLeft div,
+.middleEight .sideLeft div{
+    background-color: purple;
+}
+
+.middleOne .sideRight div,
+.middleTwo .sideRight div,
+.middleFour .sideRight div{
+    background-color: green;
+}
+
+.middleSix .sideRight div,
+.middleSeven .sideRight div,
+.middleEight .sideRight div{
+    background-color: blue;
+}
+
+
+.topLine .sideTop:nth-of-type(2) > div,
+.topLine .sideTop:nth-of-type(3) > div,
+.topLine .sideTop:nth-of-type(4) > div {
+    background-color: red;
+}
+
+.topLine .sideTop:nth-of-type(6) > div,
+.topLine .sideTop:nth-of-type(8) > div,
+.topLine .sideTop:nth-of-type(9) > div {
+    background-color: yellow;
+}
+
+.bottomLine .sideBottom:nth-of-type(2) > div,
+.bottomLine .sideBottom:nth-of-type(3) > div,
+.bottomLine .sideBottom:nth-of-type(5) > div{
+    background-color: aqua;
+}
+.bottomLine .sideBottom:nth-of-type(7) > div,
+.bottomLine .sideBottom:nth-of-type(8) > div,
+.bottomLine .sideBottom:nth-of-type(9) > div{
+    background-color: brown;
+}
+
+
+
+.property {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.property:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.property:hover {
+    background-color: #e9ecef;
+}
