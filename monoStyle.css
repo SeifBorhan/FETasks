@@ -1,0 +1,207 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.monopoly-board {
+    display: flex;
+    flex-direction: column;
+    width: 100vmin;
+    height: 100vmin;
+    position: relative;
+    border: 2px solid black;
+}
+
+.cellTopBottom{
+    width: 6.7%;
+}
+.cellSide{
+    height: 11.11%;
+}
+
+.top-left-corner,.top-right-corner,.bottom-left-corner,.bottom-right-corner{
+    flex: 0 0 auto;
+    width: 15%;
+}
+
+
+.top,.bottom{
+    flex: 0 0 auto;
+    height: 15%;
+}
+
+.middleRows{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.borderRight{
+    border-right: 2px solid black;
+}
+
+.borderLeft{
+    border-left: 2px solid black;
+}
+
+.borderBottom{
+    border-bottom: 2px solid black;
+}
+
+.borderTop{
+    border-top: 2px solid black;
+}
+
+.top .borderBottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.top .borderBottom div{
+    height: 30%;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+
+.middleRows .side .borderRight,.middleRows .side .borderLeft{
+    display: flex;
+    flex-direction: row;
+}
+
+.middleRows .side .borderRight div{
+    width: 30%;
+    height: 100%;
+    border-left: 2px solid black;
+}
+.middleRows .side .borderLeft div{
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+
+.bottom .borderTop{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom .borderTop div{
+    height: 30%;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.top .borderBottom span{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 35%;
+    padding-top: 20%;
+    font-weight: bolder;
+    transform: rotate(180deg);
+}
+.top .borderBottom article{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 35%;
+    font-weight: bolder;
+    transform: rotate(180deg);
+}
+
+.middleRows .side .borderRight span,.middleRows .side .borderRight article{
+    height: 100%;
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+    font-size: 35%;
+    padding-top: 20%;
+    font-weight: bolder;
+    transform: rotate(90deg);
+}
+
+.middleRows .side .borderLeft span,.middleRows .side .borderLeft article{
+    height: 100%;
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+    font-size: 35%;
+    padding-top: 20%;
+    font-weight: bolder;
+    transform: rotate(270deg);
+}
+
+.bottom .borderTop span{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 35%;
+    padding-top: 20%;
+    font-weight: bolder;
+}
+.bottom .borderTop article{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 35%;
+    font-weight: bolder;
+}
+
+.top .borderBottom:nth-of-type(2) > div,
+.top .borderBottom:nth-of-type(4) > div,
+.top .borderBottom:nth-of-type(5) > div {
+    background-color: red;
+}
+
+.top .borderBottom:nth-of-type(7) > div,
+.top .borderBottom:nth-of-type(8) > div,
+.top .borderBottom:nth-of-type(10) > div {
+    background-color: yellow;
+}
+
+.middleRows .side .borderRight:nth-of-type(1) > div,
+.middleRows .side .borderRight:nth-of-type(2) > div,
+.middleRows .side .borderRight:nth-of-type(4) > div {
+    background-color: orange;
+}
+
+.middleRows .side .borderRight:nth-of-type(6) > div,
+.middleRows .side .borderRight:nth-of-type(7) > div,
+.middleRows .side .borderRight:nth-of-type(9) > div {
+    background-color: rgb(233, 13, 159);
+}
+
+.middleRows .side .borderLeft:nth-of-type(1) > div,
+.middleRows .side .borderLeft:nth-of-type(2) > div,
+.middleRows .side .borderLeft:nth-of-type(4) > div {
+    background-color: green;
+}
+
+.middleRows .side .borderLeft:nth-of-type(7) > div,
+.middleRows .side .borderLeft:nth-of-type(9) > div {
+    background-color: blue;
+}
+
+.bottom .borderTop:nth-of-type(2) > div,
+.bottom .borderTop:nth-of-type(3) > div,
+.bottom .borderTop:nth-of-type(5) > div {
+    background-color: rgb(0, 162, 255);
+}
+
+.bottom .borderTop:nth-of-type(8) > div,
+.bottom .borderTop:nth-of-type(10) > div {
+    background-color: brown;
+}
